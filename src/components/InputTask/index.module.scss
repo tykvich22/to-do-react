@@ -1,0 +1,29 @@
+.inputTask {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 45px;
+	margin-bottom: 15px;
+	&Inp {
+		border: 1px solid #b1b1b1;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		padding: 9px 10px;
+		background: #dbe2ef;
+		&::placeholder {
+			color: #7b7b7b;
+		}
+	}
+	&Button {
+		border-radius: none;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		border: none;
+		cursor: pointer;
+		background: #8c52ff url('./images/add.svg') no-repeat center center;
+		transition: opacity 0.3s;
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
